@@ -1,0 +1,123 @@
+.navbar {
+  margin: auto;
+  padding: 10px 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary-background);
+  color: var(--dark-font-color);
+  width: 100%;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin: auto 0 auto 50px;
+  padding: 10px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar-ul {
+  display: inline-block;
+}
+
+.navbar-li {
+  font-size: 1.2em;
+  margin: 0 15px;
+  display: inline;
+}
+
+.nav-item {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.active-item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  top: 100%;
+  left: 0;
+  background: var(--dark-font-color);
+}
+
+.btn-login {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.2em;  
+  margin: auto 50px auto 30px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: var(--button-color);
+  color: var(--light-font-color);
+  transition-duration: 0.5s;
+  box-shadow: 2px 2px 2px var(--shadow);
+}
+
+.btn-login:hover {
+  transition-duration: 0.5s;
+  background: var(--dark-font-color);
+  color: var(--light-font-color);
+}
+
+.burger-btn {
+  display: none;
+}
+
+.close-menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin: auto 0 auto 20px;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  nav {
+    background-color: var(--primary-background-opacity);
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    padding: 0 0 20px 0;
+    border-radius: 10px;    
+  }
+
+  .navbar-ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .navbar-li {
+    margin: 20px;
+  }
+
+  .btn-login {
+    margin: 20px auto auto auto;
+  }
+
+  .close-menu-btn {    
+    margin: 20px 20px 20px auto;    
+    display: flex;
+    color: var(--dark-font-color);
+    font-size: 1.4em;
+    right: 0%;
+  }
+
+  .burger-btn {
+    display: flex;
+    font-size: 2em;
+    margin: auto 15px auto;
+  }
+}

@@ -1,0 +1,37 @@
+.search-section {
+  display: flex;
+  height: 80px;
+  background: var(--primary-background);
+}
+
+.search-form {
+  width: 70%;
+  display: flex;
+  padding: 5px 10px;
+  margin: auto;
+  background: var(--secondary-background);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px var(--shadow);
+}
+
+#search-term {
+  width: 100%;
+  margin-left: 5px;
+  position: relative;
+  color: var(--dark-font-color);
+  font-size: 1.2em;
+  border: none;
+}
+
+#search-term::placeholder {
+  color: var(--button-color);
+}
+
+.search-icon {
+  margin: auto 0;
+  color: var(--button-color);
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}

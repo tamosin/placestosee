@@ -1,0 +1,48 @@
+.location-article {
+  margin: 20px 10px;
+  background: var(--secondary-background);
+  max-width: 300px;
+  border-radius: 5px;
+  text-align: left;
+  color: var(--dark-font-color);
+  box-shadow: 2px 2px 2px var(--shadow);  
+  padding: 0 0 10px 0;
+  height: 90%
+}
+
+.thumbnail {
+  width: 100%;
+  max-width: 100%;
+}
+
+.location-name {
+  margin: 10px;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.location-text {
+  font-size: 1em;
+  margin: 10px;
+  padding: 0;
+}
+
+.nav-container {
+  height: 1.8em;
+  display: flex;
+  margin-left: 10px;
+}
+
+.nav-icon {
+  margin: auto 0;
+  color: var(--dark-font-color);
+}
+
+.nav-text {
+  margin: auto 5px;
+  padding: 0;
+}
+
+.visits-likes {
+  font-size: 0.8em;
+}
